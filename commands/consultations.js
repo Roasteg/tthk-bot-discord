@@ -3,17 +3,13 @@ const bot = new Discord.Client();
 const axios = require('axios');
 
 let consultations = [];
-
 let times = "";
 let email = "";
-
 
 axios.get('https://api.bredbrains.tech/consultations').then(response => {
     consultations = response.data.data;
     console.log(consultations);
 })
-
-
 
 module.exports = {
     name: 'tthk',
@@ -32,8 +28,6 @@ module.exports = {
         for (i = 0; i < result[0].times.length; i++) {
             times += `${result[0].times[i].weekday}, ${result[0].times[i].time}; `
         }
-
-
 
         let success = new Discord.MessageEmbed()
             .setColor('#2ECC71')
