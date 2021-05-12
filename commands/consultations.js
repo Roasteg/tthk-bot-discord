@@ -2,10 +2,8 @@ const Discord = require('discord.js');
 const axios = require('axios');
 
 let consultations = [];
-
 let times = "";
 let email = "";
-
 
 axios.get('https://api.bredbrains.tech/consultations').then(response => {
     consultations = response.data.data;
