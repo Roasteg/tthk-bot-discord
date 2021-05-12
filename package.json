@@ -9,5 +9,8 @@
   },
   "scripts": {
     "start": "node index.js"
-  }
+  },
+  "name": "tthkBotDiscord",
+  "author": "Roasteg",
+  "repository": "https://github.com/Roasteg/tthk-bot-discord"
 }
