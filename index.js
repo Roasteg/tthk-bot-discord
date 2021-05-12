@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 const TOKEN = process.env.DISCORD_TOKEN;
 const fs = require('fs');
-const prefix = process.env.PREFIX;
+const prefix = "/";
 bot.login(TOKEN);
 
 bot.commands = new Discord.Collection();
